@@ -1,9 +1,11 @@
+import { CRS, feature, utils } from "sgis";
 import {ajaxp, parseJSON} from "./utils";
-import {Crs, geo, wgs84} from "sgis/dist/Crs";
 import {serializeGeometry} from "./serializers/xmlSerializer";
 import {deserializeFeature} from "./serializers/JsonSerializer";
-import {Point} from "sgis/dist/Point";
-import {error} from "sgis/dist/utils/utils";
+
+const { geo, wgs84 } = CRS;
+const { Point } = feature;
+const { error } = utils;
 
 export class Api {
     _frame: HTMLIFrameElement;

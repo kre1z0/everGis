@@ -1,8 +1,10 @@
+import { utils } from "sgis";
 import {ServiceGroup} from "./ServiceGroup";
 import {ServiceContainer} from "./services/ServiceContainer";
-import {error} from "sgis/dist/utils/utils";
 import {Project} from "./Project";
 import {DataFilter} from "./DataFilter";
+
+const { error } = utils;
 
 export class LayerManager extends ServiceGroup {
     private _connector: any;

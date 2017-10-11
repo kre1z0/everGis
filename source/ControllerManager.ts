@@ -1,6 +1,7 @@
+import {LayerGroup, utils} from "sgis";
 import {ViewableController} from "./controllers/ViewableController";
-import {LayerGroup} from "sgis/dist/LayerGroup";
-import {error} from "sgis/dist/utils/utils";
+
+const { error } = utils;
 
 let registry = {};
 

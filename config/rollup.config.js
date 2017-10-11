@@ -6,8 +6,8 @@ export default {
         name: 'sGis',
         sourcemap: true
     },
-    external: name => {
-        if (name.search('sgis') >= 0) console.error(new Error(name));
-        return name.search('sgis') >= 0;
-    }
+    globals: {
+        sgis: 'sGis'
+    },
+    external: ['sgis']
 }

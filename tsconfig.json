@@ -3,6 +3,7 @@
     "skipLibCheck": true,
     "target": "es2015",
     "module": "amd",
+    "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "./dist/compilation",
     "declaration": true

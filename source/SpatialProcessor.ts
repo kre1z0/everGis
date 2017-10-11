@@ -1,3 +1,4 @@
+import { Map, painter } from "sgis"
 import {Connector} from "./Connector";
 import {LayerManager} from "./LayerManager";
 import {ControllerManager} from "./ControllerManager";
@@ -6,8 +7,8 @@ import {DataAccessService} from "./controllers/DataAccessService";
 import {ServiceContainer} from "./services/ServiceContainer";
 import {MapService} from "./services/MapService";
 import {TileService} from "./services/TileService";
-import {Map} from "sgis/dist/Map"
-import {DomPainter} from "sgis/dist/painters/DomPainter/DomPainter";
+
+const { DomPainter } = painter;
 
 export class SpatialProcessor {
     _baseServiceContainer: ServiceContainer;

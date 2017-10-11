@@ -1,4 +1,4 @@
-import * as sGis from "sgis/dist/sGis";
+import * as sGis from "sgis";
 import {SpatialProcessor} from "./SpatialProcessor";
 import {Connector} from "./Connector";
 import {ControllerManager} from "./ControllerManager";

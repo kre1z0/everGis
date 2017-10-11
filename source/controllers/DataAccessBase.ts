@@ -1,4 +1,4 @@
-import {EventHandler} from "sgis/dist/EventHandler";
+import {EventHandler} from "sgis";
 import {DataOperation} from "../DataOperation";
 import {xmlSerializer} from "../serializers/xmlSerializer";
 

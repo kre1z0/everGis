@@ -1,4 +1,6 @@
-import {error, getGuid} from "sgis/dist/utils/utils";
+import { utils } from "sgis";
+
+const { error, getGuid } = utils;
 
 export class Project {
     _context: {};
